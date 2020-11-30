@@ -50,4 +50,8 @@ describe('RetiredForagerBee class functionality', function() {
     expect(retiredForager.treasureChest).to.have.length(2);
   });
 
+  it('should have a `constructor` property on its prototype chain that references its constructor function', function() {
+    expect(retiredForager.constructor).to.eql(RetiredForagerBee);
+  });
+
 });
